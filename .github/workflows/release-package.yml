@@ -30,7 +30,7 @@ jobs:
           scope: '@mygreatworkstu'
       - run: npm ci
       # 从 GitHub release tag 获取版本号并更新 package.json
-      #- run: npm version ${{ github.event.release.tag_name }} --no-git-tag-version
+      - run: npm version ${{ github.event.release.tag_name }} --no-git-tag-version
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
