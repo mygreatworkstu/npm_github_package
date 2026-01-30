@@ -1,6 +1,5 @@
 {
-  // 发布到github必须添加：@mygreatworkstu/
-  "name": "@mygreatworkstu/npm_github_package",
+  "name": "@mygreatworkstu/npm_github_package", 
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -9,7 +8,6 @@
   "author": "",
   "license": "ISC",
   "description": "",
-  // 发布到github
   "publishConfig": {
     "@mygreatworkstu:registry": "https://npm.pkg.github.com"
   }
