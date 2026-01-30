@@ -27,7 +27,7 @@ jobs:
         with:
           node-version: 20
           registry-url: https://npm.pkg.github.com/
-          scope: '@mygreatworkstu'
+          scope: '@${{github.actor}}'
       - run: npm ci
       # 从 GitHub release tag 获取版本号并更新 package.json
       - run: npm version ${{ github.event.release.tag_name }} --no-git-tag-version
